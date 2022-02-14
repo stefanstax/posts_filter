@@ -1,0 +1,244 @@
+div.categories {
+  flex-wrap: wrap;
+}
+
+div.categories ul {
+  overflow-x: scroll;
+}
+
+div.categories span {
+  font-size: 15px !important;
+  font-weight: bold;
+}
+
+div.categories ul li {
+  min-width: 35%;
+}
+
+div.categories ul li a {
+  text-decoration: none;
+  padding: 10px 0px;
+  border-radius: 15px;
+  font-size: 12px !important;
+  color: #758f9c !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.categories ul li a.active,
+div.categories ul li a:hover {
+  background-color: #e3ebf1;
+  color: #1c2f38 !important;
+
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+  div.categories ul {
+    overflow-x: hidden !important;
+  }
+
+  div.categories ul li {
+    min-width: fit-content !important;
+  }
+
+  div.categories ul li a {
+    padding: 5px !important;
+  }
+}
+
+@media only screen and (min-width: 968px) {
+  div.categories span {
+    font-weight: 300 !important;
+  }
+}
+
+/* * Posts Styling */
+div.all__posts {
+  flex-wrap: wrap;
+}
+
+div.all__posts div.col-12 div.block {
+  max-width: 100%;
+
+  border-radius: 15px;
+  box-shadow: var(--shadow-15);
+  background-color: var(--clear-white);
+
+  transition: 0.3s;
+  /* transform: scale(1); */
+}
+
+div.all__posts div.col-12:hover div.block {
+  transition: 0.3s;
+  /* transform: scale(1.03) */
+}
+
+div.all__posts div.block a {
+  text-decoration: none;
+}
+
+div.all__posts div.block div.block__content {
+  min-height: 250px;
+}
+
+div.all__posts div.block div.block__content span {
+  border-left: 3px solid;
+  margin: 1rem 0px;
+  padding-left: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* ! Post Categories - Colors */
+span.affiliate-marketing {
+  color: #4527a0 !important;
+}
+
+span.dropshipping {
+  color: #ad1457 !important;
+}
+
+span.email-marketing {
+  color: #526d7a !important;
+}
+
+div.affiliate-marketing {
+  background-color: #4527a06b;
+  transition: 0.6s;
+}
+div.dropshipping {
+  background-color: #ad145636;
+  transition: 0.6s;
+}
+div.email-marketing {
+  background-color: #526d7a52;
+  transition: 0.6s;
+}
+
+div.all__posts div.block__image {
+  position: relative;
+}
+
+div.all__posts div.block__image div.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+div.all__posts
+  div
+  div.block:hover
+  div.block__image
+  div.overlay.affiliate-marketing,
+div.all__posts div div.block:hover div.block__image div.overlay.email-marketing,
+div.all__posts div div.block:hover div.block__image div.overlay.dropshipping {
+  background-color: transparent !important;
+  transition: 0.6s;
+}
+
+div.all__posts img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+
+  height: 175px;
+  object-fit: cover;
+  object-position: center;
+}
+div.all__posts div.block div.block__content h4,
+div.all__posts div.block div.block__content p {
+  padding: 10px 20px;
+}
+
+p:empty {
+  display: none;
+}
+
+div.all__posts div.col-12 div.block a div.block__action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+div.all__posts div.col-12 div.block a div.block__action p {
+  border-radius: 0px 0px 15px 15px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 13px !important;
+  letter-spacing: 1px;
+  color: var(--clear-white) !important;
+  background-color: var(--content-heading);
+  width: 100%;
+  transition: 0.3s;
+}
+
+div.all__posts div.col-12:hover div.block:hover a div.block__action p i {
+  transform: 0.3s;
+}
+
+div.all__posts div.col-12:hover div.block:hover a div.block__action p:hover i {
+  margin-left: 5px;
+  transition: 1s;
+}
+
+@media only screen and (min-width: 1024px) {
+  div.all__posts div.col-12 div.block a div.block__action p {
+    color: var(--clear-white) !important;
+    background-color: var(--clear-white) !important;
+  }
+
+  div.all__posts div.col-12 div.block {
+    box-shadow: var(--shadow-30) !important;
+  }
+
+  div.all__posts div.col-12:hover div.block:hover a div.block__action p {
+    transition: 0.6s;
+    color: var(--dimmed-black) !important;
+    background-color: #f9f9f9 !important;
+    width: 35%;
+  }
+}
+
+div.all__posts div.affiliate img {
+  object-fit: cover;
+  object-position: center;
+}
+
+div.all__posts div.affiliate.block a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px !important;
+}
+
+div.all__posts div.affiliate.block div.block__content h4,
+div.all__posts div.affiliate.block div.block__content p {
+  max-width: calc(100% - 40px);
+}
+
+div.all__posts div.affiliate.block *:not(i) {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  div.all__posts div.affiliate.block a {
+    min-height: 500px;
+  }
+
+  div.all__posts div.affiliate.block {
+    background-color: transparent !important;
+    padding: 30px;
+    box-shadow: none !important;
+  }
+
+  div.all__posts div.affiliate.block a {
+    background-color: var(--clear-white);
+  }
+}

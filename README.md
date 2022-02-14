@@ -1,5 +1,3 @@
-# posts_filter
-
 <h1>WordPress Post Filter</h1>
 <hr>
 <p>Custom made post filter for WordPress that can save your time as well as resources by simply adding it in your WordPress folder.</p>
